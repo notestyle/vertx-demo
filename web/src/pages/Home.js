@@ -12,16 +12,17 @@ class Home extends Component {
     setData = async() => {
         if(!this.state.isConnected){
             try{
-                let response = await fetch(`https://reqres.in/api/users?page=1`);
+                let response = await fetch(`http://localhost:8585`);
                 let data = await response.json();
                 let newData = this.state.datas;
-                    
-                data.data.forEach(x => {
+                
+                // console.log(newData);
+                data.forEach(x => {
                     newData.push({
                         id: x.id,
                         name: x.first_name,
                         lastName: x.last_name,
-                        role: x.avatar,
+                        role: x.role,
                         createdDate: (new Date()).toDateString()
                     })
                 });
