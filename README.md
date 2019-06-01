@@ -38,6 +38,6 @@ npm start
 
 ### Demo
 
-Click [http://13.58.178.91:3000/](http://13.58.178.91:3000/) to see the demo.
+Click [http://18.221.48.64:3000/](http://18.221.48.64:3000/) to see the demo.
 
 (c) O.Uguumur
