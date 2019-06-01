@@ -12,7 +12,7 @@ class Home extends Component {
     setData = async() => {
         if(!this.state.isConnected){
             try{
-                let response = await fetch(`http://localhost:8585`);
+                let response = await fetch(`http://localhost:8899/customers`);
                 let data = await response.json();
                 let newData = this.state.datas;
                 
@@ -20,8 +20,8 @@ class Home extends Component {
                 data.forEach(x => {
                     newData.push({
                         id: x.id,
-                        name: x.first_name,
-                        lastName: x.last_name,
+                        name: x.firstName,
+                        lastName: x.lastName,
                         role: x.role,
                         createdDate: (new Date()).toDateString()
                     })
