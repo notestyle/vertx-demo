@@ -1,6 +1,15 @@
 # vertx-demo
 demo for vertx
 
+### Install
+- [NodeJ](https://nodejs.org/en/) 
+- [JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+- [Maven](https://maven.apache.org/install.html)
+- [Postgresql](https://www.postgresql.org/download/)
+
+Restore `demo.backup` to postgresql server.
+
+
 ### Run
 There are 3 steps. See below commands and descriptions.
 
@@ -26,3 +35,9 @@ cd web-api
 npm install
 npm start
 ```
+
+### Demo
+
+Click [http://13.58.178.91:3000/](http://13.58.178.91:3000/) to see the demo.
+
+(c) O.Uguumur
